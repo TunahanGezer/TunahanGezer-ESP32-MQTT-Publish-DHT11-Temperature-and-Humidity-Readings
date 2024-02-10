@@ -3,13 +3,13 @@
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
 // WiFi parameters
-#define WLAN_SSID       "AHMET"
-#define WLAN_PASS       "tg2001fb"
+#define WLAN_SSID       "****"
+#define WLAN_PASS       "****"
 // Adafruit IO
 #define IO_SERVER      "io.adafruit.com"
 #define IO_SERVERPORT  1883
 #define IO_USERNAME    "tunahangezer"
-#define IO_KEY         "aio_GTQZ32deLlOo7ZUBebJKda4QZKer" 
+#define IO_KEY         "****" 
 WiFiClient client;
 // Setup the MQTT client class by passing in the WiFi client and MQTT server and login details.
 Adafruit_MQTT_Client mqtt(&client, IO_SERVER, IO_SERVERPORT, IO_USERNAME, IO_KEY);
