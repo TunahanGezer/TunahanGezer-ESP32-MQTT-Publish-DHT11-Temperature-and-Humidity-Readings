@@ -1,28 +1,28 @@
-# IoT Projesi: Sıcaklık ve Nem Ölçümü
+# IoT Project: Temperature and Humidity
 
-Bu proje, ESP32 mikrodenetleyici kartını kullanarak DHT11 sensöründen alınan sıcaklık ve nem verilerini Adafruit IO'ya göndermektedir. Bu sayede, nerede olursanız olun, internet bağlantısı olan herhangi bir cihaz üzerinden bu verilere erişebilirsiniz.
+This project utilizes an ESP32 microcontroller board to collect temperature and humidity data from a DHT11 sensor and send it to Adafruit IO. This enables accessing this data from anywhere via any device with an internet connection.
 
-## Kullanılan Donanım ve Kütüphaneler
+## Hardware and Libraries Used
 
-- ESP32 mikrodenetleyici kartı
-- DHT11 sıcaklık ve nem sensörü
-- WiFi bağlantısı için `WiFi.h`
-- MQTT iletişimi için `Adafruit_MQTT` ve `Adafruit_MQTT_Client`
-- Sıcaklık ve nem verilerini göndermek için Adafruit IO kullanılmıştır.
+- ESP32 microcontroller board
+- DHT11 temperature and humidity sensor
+- `WiFi.h` for WiFi connection
+- `Adafruit_MQTT` and `Adafruit_MQTT_Client` for MQTT communication
+- Adafruit IO is used to send temperature and humidity data.
 
-## Kurulum
+## Setup
 
-1. Arduino IDE'yi açın ve gerekli kütüphaneleri yükleyin. (WiFi, Adafruit MQTT, SimpleDHT)
-2. `main.ino` dosyasını Arduino IDE'de açın.
-3. WiFi bağlantı bilgilerinizi (`WLAN_SSID` ve `WLAN_PASS`) ve Adafruit IO bilgilerinizi (`IO_USERNAME` ve `IO_KEY`) güncelleyin.
-4. Adafruit IO web arayüzü üzerinden [bu bağlantıya](https://io.adafruit.com/tunahangezer/dashboards/temp-and-humu) tıklayarak sıcaklık ve nem verilerinizi gerçek zamanlı olarak takip edebilirsiniz.
+1. Open Arduino IDE and install the necessary libraries (WiFi, Adafruit MQTT, SimpleDHT).
+2. Open the `main.ino` file in Arduino IDE.
+3. Update your WiFi connection details (`WLAN_SSID` and `WLAN_PASS`) and Adafruit IO credentials (`IO_USERNAME` and `IO_KEY`).
+4. You can track your temperature and humidity data in real-time by clicking [this link](https://io.adafruit.com/tunahangezer/dashboards/temp-and-humu) on the Adafruit IO web interface.
 
-## Nasıl Çalışır?
+## How It Works
 
-1. ESP32 cihazınızı bilgisayarınıza USB üzerinden bağlayın.
-2. Arduino IDE üzerinden kodu yükleyin ve ESP32'yi başlatın.
-3. Adafruit IO web arayüzü üzerinden sıcaklık ve nem verilerinizi takip edin.
+1. Connect your ESP32 device to your computer via USB.
+2. Upload the code via Arduino IDE and start the ESP32.
+3. Monitor your temperature and humidity data on the Adafruit IO web interface.
 
-## Notlar
+## Notes
 
-- Bu projeyi kişisel Adafruit IO hesabınıza bağlamak için, Adafruit IO web sitesinde bir hesap oluşturmanız gerekmektedir.
+- To link this project to your personal Adafruit IO account, you need to create an account on the Adafruit IO website.
